@@ -8,10 +8,15 @@ public class StreamWithSort {
     
     public static void main(String[] args) {
         List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "David", "Eve");
+        
+        names.stream()
+             .sorted()
+             .forEach(System.out::println);
+
         names.stream()
              .sorted(Comparator.comparingInt(String::length))
              .forEach(System.out::println);
-        
+
         names.stream()
              .sorted(Comparator.comparingInt(String::length).reversed())
              .forEach(System.out::println);
