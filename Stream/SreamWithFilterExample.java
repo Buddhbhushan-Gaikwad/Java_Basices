@@ -1,4 +1,4 @@
-package Collection_Framework.Stream;
+package Stream;
 
 import java.util.Arrays;
 
